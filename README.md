@@ -1,4 +1,15 @@
-# ConsoleColor Utility for Java
+# Console Utilities for Java
+
+A collection of lightweight utilities for enhancing console output with colors and ASCII banners.
+
+## Utilities
+
+- **ConsoleColor** - Color your console output using ANSI escape codes
+- **ConsoleBanner** - Print large ASCII text banners
+
+---
+
+# ConsoleColor
 
 A lightweight utility for coloring console output using ANSI escape codes. Make your console output visually distinct with minimal code.
 
@@ -149,7 +160,8 @@ my-java-project/
 ├── src/
 │   ├── utils/
 │   │   └── console/
-│   │       └── ConsoleColor.java
+│   │       ├── ConsoleColor.java
+│   │       └── ConsoleBanner.java
 │   └── Main.java
 ├── README.md
 └── (other files)
@@ -191,6 +203,94 @@ ConsoleColor.RESET
 | `ConsoleColor.info(text)` | Info messages (cyan) |
 | `ConsoleColor.rgb(text, r, g, b)` | Custom RGB color |
 | `ConsoleColor.style(text, styles...)` | Combine custom styles |
+
+---
+
+# ConsoleBanner Utility for Java
+
+A utility for printing large ASCII text banners in the console. Great for welcome screens, menus, and headers.
+
+## Features
+
+- Pre-designed ASCII banners (welcome, login, signup, attendance, addMaterial)
+- Color support (integrates with ConsoleColor)
+- Centered printing option
+- Custom banner support
+
+## Installation
+
+1. Copy `ConsoleBanner.java` to your project:
+
+```
+your-project/
+└── utils/
+    └── console/
+        └── ConsoleBanner.java
+```
+
+2. Import in your Java files:
+
+```java
+import utils.console.ConsoleBanner;
+```
+
+## Usage
+
+### Pre-defined Banners
+
+```java
+ConsoleBanner.welcome();
+ConsoleBanner.login();
+ConsoleBanner.signup();
+ConsoleBanner.attendance();
+ConsoleBanner.addMaterial();
+```
+
+### With Colors
+
+```java
+ConsoleBanner.print(ConsoleBanner.WELCOME, ConsoleColor.CYAN);
+ConsoleBanner.print(ConsoleBanner.LOGIN, ConsoleColor.GREEN);
+ConsoleBanner.print(ConsoleBanner.SIGNUP, ConsoleColor.PURPLE);
+```
+
+### Centered Banner
+
+```java
+ConsoleBanner.printCentered(ConsoleBanner.WELCOME);
+ConsoleBanner.printCentered(ConsoleBanner.WELCOME, ConsoleColor.CYAN);
+```
+
+### Available Banner Constants
+
+- `ConsoleBanner.WELCOME`
+- `ConsoleBanner.LOGIN`
+- `ConsoleBanner.SIGNUP`
+- `ConsoleBanner.ATTENDANCE`
+- `ConsoleBanner.ADD_MATERIAL`
+
+## Full Example
+
+```java
+import utils.console.ConsoleBanner;
+import utils.console.ConsoleColor;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(ConsoleColor.bold("=== WELCOME ==="));
+        ConsoleBanner.welcome();
+
+        System.out.println();
+        System.out.println(ConsoleColor.success("Login to continue:"));
+        ConsoleBanner.login();
+
+        System.out.println();
+        System.out.println(ConsoleColor.info("Or sign up:"));
+        ConsoleBanner.signup();
+    }
+}
+```
 
 ## License
 

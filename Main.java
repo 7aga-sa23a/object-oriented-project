@@ -1,7 +1,14 @@
+import utils.console.ConsoleBanner;
 import utils.console.ConsoleColor;
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println(ConsoleColor.GREEN + "Hello, World!" + ConsoleColor.RESET);
+        ConsoleBanner.welcome();
+        ConsoleBanner.login();
+        ConsoleBanner.signup();
+        ConsoleBanner.attendance();
+        ConsoleBanner.material();
+        ConsoleBanner.addMaterial();
     }
 }
