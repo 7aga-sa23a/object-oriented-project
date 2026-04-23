@@ -1,0 +1,38 @@
+[
+  {
+    "username": "basmala",
+    "password": "basmala",
+    "repeatedPasswordc": "basmala",
+    "ID": "111",
+    "Courses": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "username": "huda",
+    "password": "huda",
+    "repeatedPasswordc": "huda",
+    "ID": "123",
+    "Courses": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]
