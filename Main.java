@@ -1,3 +1,6 @@
+// TO RUN THE PROGRAM, TYPE THE FOLLOWING IN THE TERMINAL
+// java -cp ".;gson-2.13.2.jar" Main.java
+
 import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -229,6 +232,5 @@ class login {
                     System.out.println("Incorrect password. contact IT in the next 24 hours or try again.");
                 }
         }
-    
     }
 }
