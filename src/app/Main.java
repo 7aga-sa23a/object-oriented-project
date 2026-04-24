@@ -1,5 +1,7 @@
 package src.app;
 
+// Run the program using the following command: java Main.java
+
 /**
  * This program is a Java OOP Attendance System using QR code
  * simulation to manage students, materials, and attendance tracking.
@@ -8,9 +10,6 @@ package src.app;
  * @since 2026-04-24
  * @version v0.1.0
  */
-
-// Run the program using the following command: java Main.java
-
 public class Main {
     /**
      * Program flow.
