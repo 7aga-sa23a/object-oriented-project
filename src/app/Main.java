@@ -1,6 +1,7 @@
 package src.app;
 
 // Run the program using the following command: java Main.java
+// Or use this shortcut in VS Code: Ctrl + F5
 
 /**
  * This program is a Java OOP Attendance System using QR code
@@ -12,15 +13,15 @@ package src.app;
  */
 public class Main {
     /**
-     * Program flow.
+     * The main method that handles the program flow.
      * 
      * @param args
      */
     public static void main(String[] args) {
-        // Start the program flow
-        Main main = new Main();
-
-        main.onboardingPage();
+        // Example usage of page routing
+        Runnable nextPage = Main.loginPage();
+        System.out.println("Redirecting to the next page.");
+        nextPage.run();
     }
 
     /**
@@ -32,9 +33,9 @@ public class Main {
      * - Sign up option
      * - Exit option
      */
-    private void onboardingPage() {
-        // Implement the onboarding page logic
-        System.out.println("Program structure is ready.");
+    private static Runnable onboardingPage() {
+        System.out.println("This is the onboarding page.");
+        return null;
     }
 
     /**
@@ -44,8 +45,9 @@ public class Main {
      * - In case you forgot your password, please contact the faculty IT
      * - Signup instead
      */
-    private void loginPage() {
-        // Implement the login page logic
+    private static Runnable loginPage() {
+        System.out.println("This is the login page.");
+        return Main::signupPage;
     }
 
     /**
@@ -59,8 +61,9 @@ public class Main {
      * - - Your registration will be evaluated by the IT shortly…
      * - - Registration was successful!
      */
-    private void signupPage() {
-        // Implement the signup page logic
+    private static Runnable signupPage() {
+        System.out.println("This is the signup page.");
+        return null;
     }
 
     /**
@@ -72,8 +75,9 @@ public class Main {
      * - - Shows databases for that day
      * - Exit program
      */
-    private void dashboardPage() {
-        // Implement the dashboard page logic
+    private static Runnable dashboardPage() {
+        System.out.println("This is the dashboard page.");
+        return null;
     }
 
     /**
@@ -83,8 +87,9 @@ public class Main {
      * - Semester
      * - Code
      */
-    private void addCoursePage() {
-        // Implement the add course page logic
+    private static Runnable addCoursePage() {
+        System.out.println("This is the add courses page.");
+        return null;
     }
 
     /**
@@ -100,8 +105,9 @@ public class Main {
      * - - 35% - 70% Yellow (Normal)
      * - - 70% ≤ Green (Safe)
      */
-    private void showCoursesPage() {
-        // Implement the show courses page logic
+    private static Runnable showCoursesPage() {
+        System.out.println("This is the show courses page.");
+        return null;
     }
 
     /**
@@ -109,15 +115,17 @@ public class Main {
      * - Code scanner class
      * - Connected with JSON database
      */
-    private void takeAttendancePage() {
-        // Implement the take attendance page logic
+    private static Runnable takeAttendancePage() {
+        System.out.println("This is the take attendance page.");
+        return null;
     }
 
     /**
      * Edit attendance for a day
      * - Shows databases for that day
      */
-    private void editAttendancePage() {
-        // Implement the edit attendance page logic
+    private static Runnable editAttendancePage() {
+        System.out.println("This is the edit attendance page.");
+        return null;
     }
 }
