@@ -9,7 +9,7 @@ package src.app;
  * 
  * @author 7aga-sa23a
  * @since 2026-04-24
- * @version v0.1.0
+ * @version v0.2.0
  */
 public class Main {
     /**
