@@ -22,7 +22,7 @@ import java.util.HashMap;
  * 
  * @author 7aga-sa23a
  * @since 2026-04-24
- * @version v0.2.0
+ * @version v0.3.0
  */
 public class Main {
     /**
@@ -41,8 +41,7 @@ public class Main {
                     "TakeAttendancePage", new TakeAttendancePage(),
                     "EditAttendancePage", new EditAttendancePage()));
 
-    public Main() {
-    }
+    public Main() {}
 
     /**
      * The main method that handles the program flow.
@@ -50,8 +49,6 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // THIS IS JUST AN EXAMPLE OF HOW TO USE AND NAVIGATE BETWEEN PAGES
-
         // Starting page
         final OnboardingPage onboardingPage = (OnboardingPage) pageMap.get("OnboardingPage");
         String nextPageName = onboardingPage.display();
