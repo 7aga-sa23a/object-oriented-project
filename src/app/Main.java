@@ -1,7 +1,11 @@
+package src.app;
 // TO RUN THE PROGRAM, TYPE THE FOLLOWING IN THE TERMINAL
 // java -cp ".;gson-2.13.2.jar" Main.java
 
 import java.util.Scanner;
+
+import src.model.Login;
+import src.model.Signup;
 
 public class Main {
     public static void main(String[] args) {

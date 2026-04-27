@@ -1,3 +1,4 @@
+package src.model;
 import java.util.ArrayList;
 import java.util.Scanner;
 import com.google.gson.Gson;
@@ -21,7 +22,7 @@ public class Signup {
     public Signup() {
         Scanner sc = new Scanner(System.in);
 
-        String fileName = "doctors.json";
+        String fileName = "data/doctors.json";
         JsonArray doctorsArray;
 
         try (FileReader reader = new FileReader(fileName)) {

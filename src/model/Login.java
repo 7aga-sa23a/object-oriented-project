@@ -1,3 +1,5 @@
+package src.model;
+
 import java.util.Scanner;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
