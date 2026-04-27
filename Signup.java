@@ -19,7 +19,6 @@ public class Signup {
     public Signup() {
         Scanner sc = new Scanner(System.in);
 
-        Gson gsn = new Gson();
         String fileName = "doctors.json";
         JsonArray doctorsArray;
 
@@ -106,6 +105,7 @@ public class Signup {
             }
         }
 
+        sc.close();
     }
 
 }

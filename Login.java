@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -20,16 +19,15 @@ public class Login {
         this.ID = sc.nextLine();
 
         // read the json file and check if the ID exists in the file
-        Gson gson = new Gson();
         String fileName = "doctors.json";
     
-
         JsonArray doctorsArray;
 
         try (FileReader reader = new FileReader(fileName)) {
             doctorsArray = JsonParser.parseReader(reader).getAsJsonArray();
         } catch (Exception e) {
             System.out.println("File error or empty database");
+            sc.close();
             return;
         }
 
@@ -49,6 +47,7 @@ public class Login {
                     break;
                 }}
                 if (this.ID.equals("signup")) {
+                    @SuppressWarnings("unused")
                     Signup doctor1 = new Signup();
                     sign_up = true;
                     break;
@@ -67,6 +66,7 @@ public class Login {
             // take Doctor password and save it in password variable
             System.out.println("Enter Your password: ");
             this.password = sc.nextLine();
+            sc.close();
             boolean passwordMatch = false;
             for (JsonElement element : doctorsArray) {
 

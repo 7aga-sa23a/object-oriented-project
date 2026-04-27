@@ -19,9 +19,11 @@ public class Main {
                 // choice 1 for sign up and choice 2 for login, if the input is invalid ask the user to enter a valid input until they do.
 
                 if (choice == 1) {
+                    @SuppressWarnings("unused")
                     Signup doctor1 = new Signup();
                     validInput = true;
                 } else if (choice == 2) {
+                    @SuppressWarnings("unused")
                     Login doctor2 = new Login();
                     validInput = true;
                 } else if (choice == 3) {
@@ -34,5 +36,7 @@ public class Main {
                 sc.next(); // Clear the invalid input
             }
         }
+
+        sc.close();
     }
 }
