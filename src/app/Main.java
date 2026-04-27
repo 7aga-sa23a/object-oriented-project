@@ -1,46 +1,123 @@
 package src.app;
-// TO RUN THE PROGRAM, TYPE THE FOLLOWING IN THE TERMINAL
-// java -cp ".;gson-2.13.2.jar" Main.java
 
-import java.util.Scanner;
+// Run the program using the following command: java Main.java
 
-import src.model.Login;
-import src.model.Signup;
-
+/**
+ * This program is a Java OOP Attendance System using QR code
+ * simulation to manage students, materials, and attendance tracking.
+ * 
+ * @author 7aga-sa23a
+ * @since 2026-04-24
+ * @version v0.1.0
+ */
 public class Main {
+    /**
+     * Program flow.
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
+        // Start the program flow
+        Main main = new Main();
 
-        // create an object of signUp class to call the constructor and start the sign up process for doctors.
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome Doctor!");
-        
-        // ask the doctor if they want to sign up or login and call the appropriate class based on their choice.
-        boolean validInput = false;
-        while (!validInput) {
-            System.out.print("Please enter your choice \n1- Sign Up\n2- Login\n3- Exit\nYour choice: ");
-            try {
-                int choice = sc.nextInt();
-                // choice 1 for sign up and choice 2 for login, if the input is invalid ask the user to enter a valid input until they do.
+        main.onboardingPage();
+    }
 
-                if (choice == 1) {
-                    @SuppressWarnings("unused")
-                    Signup doctor1 = new Signup();
-                    validInput = true;
-                } else if (choice == 2) {
-                    @SuppressWarnings("unused")
-                    Login doctor2 = new Login();
-                    validInput = true;
-                } else if (choice == 3) {
-                    System.exit(0);
-                } else {
-                    System.out.println("Invalid choice. Please enter 1 for Sign Up or 2 for Login.");
-                }
-            } catch (Exception e) {
-                System.out.println("Invalid input. Please enter a number (1 or 2).");
-                sc.next(); // Clear the invalid input
-            }
-        }
+    /**
+     * Onboarding page
+     * - Info about the program
+     * - - Clarify what the program does
+     * - - Only for doctors
+     * - Login option
+     * - Sign up option
+     * - Exit option
+     */
+    private void onboardingPage() {
+        // Implement the onboarding page logic
+        System.out.println("Program structure is ready.");
+    }
 
-        sc.close();
+    /**
+     * Login page
+     * - Doctor ID OR Email
+     * - Password
+     * - In case you forgot your password, please contact the faculty IT
+     * - Signup instead
+     */
+    private void loginPage() {
+        // Implement the login page logic
+    }
+
+    /**
+     * Signup page
+     * - Name (First & last only)
+     * - Email
+     * - Password
+     * - Repeat password
+     * - EXTRA: Simulate email and IT confirmation process
+     * - - Example:
+     * - - Your registration will be evaluated by the IT shortly…
+     * - - Registration was successful!
+     */
+    private void signupPage() {
+        // Implement the signup page logic
+    }
+
+    /**
+     * Dashboard
+     * - Add course
+     * - Show courses
+     * - Take attendance for today
+     * - Edit attendance for a day
+     * - - Shows databases for that day
+     * - Exit program
+     */
+    private void dashboardPage() {
+        // Implement the dashboard page logic
+    }
+
+    /**
+     * Add course
+     * - name
+     * - Year
+     * - Semester
+     * - Code
+     */
+    private void addCoursePage() {
+        // Implement the add course page logic
+    }
+
+    /**
+     * Show courses
+     * - Displays a list of courses added
+     * - - Number of registered students
+     * - - Other course details…
+     * - Edit course
+     * - Delete course
+     * - Option to view course attendance on a specific day
+     * - Option to view student attendance percentage
+     * - - 35% ≥ Red (Danger)
+     * - - 35% - 70% Yellow (Normal)
+     * - - 70% ≤ Green (Safe)
+     */
+    private void showCoursesPage() {
+        // Implement the show courses page logic
+    }
+
+    /**
+     * Take attendance
+     * - Code scanner class
+     * - Connected with JSON database
+     */
+    private void takeAttendancePage() {
+        // Implement the take attendance page logic
+    }
+
+    /**
+     * Edit attendance for a day
+     * - Shows databases for that day
+     */
+    private void editAttendancePage() {
+        // Implement the edit attendance page logic
     }
 }
