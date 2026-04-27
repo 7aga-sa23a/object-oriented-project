@@ -23,7 +23,7 @@ public class Main {
         // ask the doctor if they want to sign up or login and call the appropriate class based on their choice.
         boolean validInput = false;
         while (!validInput) {
-            System.out.print("Please enter your choice \n1- Sign Up\n2- Login\nYour choice: ");
+            System.out.print("Please enter your choice \n1- Sign Up\n2- Login\n3- Exit\nYour choice: ");
             try {
                 int choice = sc.nextInt();
                 // choice 1 for sign up and choice 2 for login, if the input is invalid ask the user to enter a valid input until they do.
@@ -34,6 +34,8 @@ public class Main {
                 } else if (choice == 2) {
                     login doctor2 = new login();
                     validInput = true;
+                } else if (choice == 3) {
+                    System.exit(0);
                 } else {
                     System.out.println("Invalid choice. Please enter 1 for Sign Up or 2 for Login.");
                 }
