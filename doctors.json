@@ -1,38 +1,16 @@
 [
   {
-    "username": "basmala",
-    "password": "basmala",
-    "repeatedPasswordc": "basmala",
-    "ID": "111",
-    "Courses": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
+    "username": "doctor1",
+    "password": "doctor1",
+    "repeatedPasswordc": "doctor1",
+    "ID": "1",
+    "courses": []
   },
   {
-    "username": "huda",
-    "password": "huda",
-    "repeatedPasswordc": "huda",
-    "ID": "123",
-    "Courses": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
+    "username": "doctor2",
+    "password": "doctor2",
+    "repeatedPasswordc": "doctor2",
+    "ID": "2",
+    "courses": []
   }
 ]
