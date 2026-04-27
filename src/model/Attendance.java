@@ -1,10 +1,12 @@
-class Attendance {
+package src.model;
+
+public class Attendance {
     String studentName;
     int attendedLectures;
     int totalLectures;
 
     // Constructor
-    Attendance(String name, int attended, int total) {
+    public Attendance(String name, int attended, int total) {
         studentName = name;
         attendedLectures = attended;
         totalLectures = total;
@@ -32,7 +34,7 @@ class Attendance {
     }
 
     // عرض بيانات الطالب
-    void display() {
+    public void display() {
         double percent = calculatePercentage();
 
         System.out.println("Student Name: " + studentName);

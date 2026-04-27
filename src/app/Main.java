@@ -1,3 +1,7 @@
+package src.app;
+
+import src.model.Attendance;
+
 public class Main {
     public static void main(String[] args) {
 
