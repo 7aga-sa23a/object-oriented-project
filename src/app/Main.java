@@ -1,16 +1,123 @@
 package src.app;
 
-import src.model.Attendance;
+// Run the program using the following command: java Main.java
 
+/**
+ * This program is a Java OOP Attendance System using QR code
+ * simulation to manage students, materials, and attendance tracking.
+ * 
+ * @author 7aga-sa23a
+ * @since 2026-04-24
+ * @version v0.1.0
+ */
 public class Main {
+    /**
+     * Program flow.
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
+        // Start the program flow
+        Main main = new Main();
 
-        Attendance s1 = new Attendance("Ahmed", 18, 20);
-        Attendance s2 = new Attendance("Sara", 15, 20);
-        Attendance s3 = new Attendance("Mona", 10, 20);
+        main.onboardingPage();
+    }
 
-        s1.display();
-        s2.display();
-        s3.display();
+    /**
+     * Onboarding page
+     * - Info about the program
+     * - - Clarify what the program does
+     * - - Only for doctors
+     * - Login option
+     * - Sign up option
+     * - Exit option
+     */
+    private void onboardingPage() {
+        // Implement the onboarding page logic
+        System.out.println("Program structure is ready.");
+    }
+
+    /**
+     * Login page
+     * - Doctor ID OR Email
+     * - Password
+     * - In case you forgot your password, please contact the faculty IT
+     * - Signup instead
+     */
+    private void loginPage() {
+        // Implement the login page logic
+    }
+
+    /**
+     * Signup page
+     * - Name (First & last only)
+     * - Email
+     * - Password
+     * - Repeat password
+     * - EXTRA: Simulate email and IT confirmation process
+     * - - Example:
+     * - - Your registration will be evaluated by the IT shortly…
+     * - - Registration was successful!
+     */
+    private void signupPage() {
+        // Implement the signup page logic
+    }
+
+    /**
+     * Dashboard
+     * - Add course
+     * - Show courses
+     * - Take attendance for today
+     * - Edit attendance for a day
+     * - - Shows databases for that day
+     * - Exit program
+     */
+    private void dashboardPage() {
+        // Implement the dashboard page logic
+    }
+
+    /**
+     * Add course
+     * - name
+     * - Year
+     * - Semester
+     * - Code
+     */
+    private void addCoursePage() {
+        // Implement the add course page logic
+    }
+
+    /**
+     * Show courses
+     * - Displays a list of courses added
+     * - - Number of registered students
+     * - - Other course details…
+     * - Edit course
+     * - Delete course
+     * - Option to view course attendance on a specific day
+     * - Option to view student attendance percentage
+     * - - 35% ≥ Red (Danger)
+     * - - 35% - 70% Yellow (Normal)
+     * - - 70% ≤ Green (Safe)
+     */
+    private void showCoursesPage() {
+        // Implement the show courses page logic
+    }
+
+    /**
+     * Take attendance
+     * - Code scanner class
+     * - Connected with JSON database
+     */
+    private void takeAttendancePage() {
+        // Implement the take attendance page logic
+    }
+
+    /**
+     * Edit attendance for a day
+     * - Shows databases for that day
+     */
+    private void editAttendancePage() {
+        // Implement the edit attendance page logic
     }
 }
