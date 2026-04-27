@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,7 +14,8 @@ import java.io.IOException;
 public class Signup {
 
     // this is doctor's attributes
-    String username, password, repeatedPasswordc, ID, Courses[] = new String[10];
+    String username, password, repeatedPasswordc, ID;
+    ArrayList <String> courses = new ArrayList<String>();
 
     // take input from user in the default constructor
     public Signup() {
