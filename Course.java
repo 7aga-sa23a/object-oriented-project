@@ -129,13 +129,3 @@ public class Course {
         }
     }
 }
-/*
- * 1. Course (Huda & Za3zo3)
- * 1. Attributes
- * 1. ID
- * 2. Name
- * 2. Methods
- * 1. Get registered students
- * 2. Add student
- * 3. Remove student
- */
