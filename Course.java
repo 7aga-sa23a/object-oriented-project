@@ -75,13 +75,13 @@ public class Course {
         return false;
     }
 
-    public void getRegisteredStudent(String courseID, String studentName) throws Exception {
+    public void addStudent(String courseID, String studentName) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         File file = new File("output/courses.json");
         new File("output").mkdirs();
         List<Course> courses = loadCourses(mapper, file);
 
-        if (isCourseExist(courses,courseID)) {
+        if (isCourseExist(courses, courseID)) {
             for (Course course : courses) {
                 if (course.ID.equals(courseID)) {
                     course.Students.add(studentName);
@@ -92,7 +92,6 @@ public class Course {
         } else {
             System.out.println("This Course doesnt Exist , try again");
         }
-        
 
     }
 
@@ -119,11 +118,33 @@ public class Course {
         }
     }
 
+    public ArrayList<String> getRegisteredStudent(String courseName) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        File file = new File("output/courses.json");
+        List<Course> courses = loadCourses(mapper, file);
+
+        for (Course course : courses) {
+            if(course.name.equals(courseName))
+            {
+                return course.Students;
+            }
+                
+        }
+
+        System.out.println("No Registered Student in this Course");
+        return null;
+
+    }
+
     public static void main(String[] args) {
         Course c = new Course();
         try {
-            c.getRegisteredStudent("CS102", "Huda Amr"); 
-            //c.removeStudent("CS102", "Huda Amr");
+            ArrayList<String>x = c.getRegisteredStudent("Introduction to Programming");
+            for(String i : x)
+            {
+                System.out.println(i);
+            }
+            // c.removeStudent("CS102", "Huda Amr");
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
