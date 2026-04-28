@@ -1,4 +1,5 @@
 package src.model;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -125,11 +126,10 @@ public class Course {
         List<Course> courses = loadCourses(mapper, file);
 
         for (Course course : courses) {
-            if(course.name.equals(courseName))
-            {
+            if (course.name.equals(courseName)) {
                 return course.Students;
             }
-                
+
         }
 
         System.out.println("No Registered Student in this Course");
@@ -140,9 +140,8 @@ public class Course {
     public static void main(String[] args) {
         Course c = new Course();
         try {
-            ArrayList<String>x = c.getRegisteredStudent("Introduction to Programming");
-            for(String i : x)
-            {
+            ArrayList<String> x = c.getRegisteredStudent("Introduction to Programming");
+            for (String i : x) {
                 System.out.println(i);
             }
             // c.removeStudent("CS102", "Huda Amr");
