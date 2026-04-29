@@ -2,8 +2,6 @@ package src.page;
 
 import java.util.Scanner;
 
-import src.app.Main;
-
 public final class OnboardingPage extends Page {
     /**
      * Onboarding page
