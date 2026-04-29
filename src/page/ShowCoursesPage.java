@@ -1,6 +1,6 @@
 package src.page;
 
-public final class ShowCoursesPage {
+public final class ShowCoursesPage extends Page {
     /**
      * Show courses
      * - Displays a list of courses added
@@ -15,6 +15,17 @@ public final class ShowCoursesPage {
      * - - 70% ≤ Green (Safe)
      */
     public ShowCoursesPage() {
+        
+    }
+
+    public String display() {
+        // Dispaly the page details
         System.out.println("This is the show courses page.");
+
+        // ...
+
+        // Return the next page to navigate to
+        // In this case, there is no next page to navigate to
+        return null;
     }
 }

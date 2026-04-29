@@ -1,6 +1,6 @@
 package src.page;
 
-public final class DashboardPage {
+public final class DashboardPage extends Page {
     /**
      * Dashboard
      * - Add course
@@ -11,6 +11,16 @@ public final class DashboardPage {
      * - Exit program
      */
     public DashboardPage() {
+        
+    }
+
+    public String display() {
+        // Dispaly the page details
         System.out.println("This is the dashboard page.");
+
+        // ...
+
+        // Return the next page to navigate to
+        return "AddCoursePage";
     }
 }
