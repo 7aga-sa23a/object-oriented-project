@@ -151,7 +151,7 @@ public class Course {
         saveCourses(mapper, file, courses);
     }
 
-    public void editCourse(String courseID, String name, int year, int semester) throws Exception {
+    public static void editCourse(String courseID, String name, int year, int semester) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         File file = new File("src/main/resources/courses.json");
         List<Course> courses = loadCourses(mapper, file);
