@@ -7,12 +7,14 @@ public final class TakeAttendancePage extends Page {
      * - Connected with JSON database
      */
     public TakeAttendancePage() {
-        
+
     }
 
+    @Override
     public String display() {
         // Dispaly the page details
         System.out.println("This is the take attendance page.");
+        System.out.println();
 
         // ...
 

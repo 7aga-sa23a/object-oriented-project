@@ -56,9 +56,9 @@ public class Doctor {
                 System.out.println(
                         "Invalid choice. Please enter :\n1- unique ID.\n2- login if you already have an account.");
                 choose = sc.nextInt();
-                if (choose == 2) {
-                    return 2;
-                }
+            }
+            if (choose == 2) {
+                return 2;
             }
 
         while (!uniqueID || !id.matches("[0-9]+")) {

@@ -1,6 +1,6 @@
-haga_talga\model\Signup.class
-haga_talga\model\Login.class
+haga_talga\util\AsciiFormatterUtil$BoxChars.class
 haga_talga\page\DashboardPage.class
+haga_talga\util\AsciiFormatterUtil.class
 haga_talga\page\ShowCoursesPage.class
 haga_talga\page\LoginPage.class
 haga_talga\page\Page.class
