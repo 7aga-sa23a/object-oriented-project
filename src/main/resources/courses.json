@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "ID": "CS205",
@@ -16,3 +17,20 @@
     "id": "201"
   }
 ]
+=======
+[ {
+  "ID" : "CS205",
+  "name" : "Programming 1",
+  "year" : 2025,
+  "semester" : 3,
+  "Students" : [ ],
+  "id" : "CS205"
+}, {
+  "ID" : "201",
+  "name" : "Programming 3",
+  "year" : 2025,
+  "semester" : 5,
+  "Students" : [ ],
+  "id" : "201"
+} ]
+>>>>>>> development
