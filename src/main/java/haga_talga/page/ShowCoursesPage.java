@@ -28,12 +28,7 @@ public final class ShowCoursesPage extends Page {
 
     @Override
     public String display() {
-        // Dispaly the page details
-        System.out.println("This is the show courses page.");
-        System.out.println();
-
         try {
-
             System.out.println("Showing courses details...");
             System.out.println();
             Thread.sleep(1000);
