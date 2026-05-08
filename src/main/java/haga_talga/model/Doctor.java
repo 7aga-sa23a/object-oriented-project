@@ -125,7 +125,6 @@ public class Doctor {
             return 2;
         }
 
-    
         String fileName = "src/main/resources/doctors.json";
 
         JsonArray doctorsArray;
@@ -158,10 +157,9 @@ public class Doctor {
                 } else {
                     return -1; // wrong password
                 }
-            } else {
-                return 0; // id not found
             }
         }
-        return -3;
+
+        return 0; // id not found
     }
 }
