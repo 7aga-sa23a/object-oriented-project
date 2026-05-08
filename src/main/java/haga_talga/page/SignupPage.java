@@ -13,12 +13,14 @@ public final class SignupPage extends Page {
      * - - Registration was successful!
      */
     public SignupPage() {
-        
+
     }
 
+    @Override
     public String display() {
         // Dispaly the page details
         System.out.println("This is the signup page.");
+        System.out.println();
 
         // ...
 

@@ -8,8 +8,9 @@ import haga_talga.page.DashboardPage;
 import haga_talga.page.AddCoursePage;
 import haga_talga.page.ShowCoursesPage;
 import haga_talga.page.TakeAttendancePage;
-import haga_talga.page.EditAttendancePage;
 import haga_talga.page.ShowCourseAttendancePage;
+import haga_talga.page.DeleteCoursePage;
+import haga_talga.util.AsciiFormatterUtil;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -31,6 +32,7 @@ public class Main {
      * just their name. It also calls page constructors so that pages are ready to
      * use.
      */
+
     private static final Map<String, Object> pageMap = new HashMap<>(
             Map.of(
                     "OnboardingPage", new OnboardingPage(),
@@ -40,12 +42,11 @@ public class Main {
                     "AddCoursePage", new AddCoursePage(),
                     "ShowCoursesPage", new ShowCoursesPage(),
                     "TakeAttendancePage", new TakeAttendancePage(),
-                    "EditAttendancePage", new EditAttendancePage(),
-                    "ShowCourseAttendancePage", new ShowCourseAttendancePage())
-                );
+                    "ShowCourseAttendancePage", new ShowCourseAttendancePage(),
+                    "DeleteCoursePage", new DeleteCoursePage()));
 
-
-    public Main() {}
+    public Main() {
+    }
 
     /**
      * The main method that handles the program flow.
@@ -53,6 +54,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
+
         // Starting page
         // final OnboardingPage onboardingPage = (OnboardingPage) pageMap.get("OnboardingPage");
         // String nextPageName = onboardingPage.display();

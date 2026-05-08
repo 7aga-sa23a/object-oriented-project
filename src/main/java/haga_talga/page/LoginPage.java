@@ -10,14 +10,16 @@ public final class LoginPage extends Page {
      * - Signup instead
      */
     public LoginPage() {
-        
+
     }
 
+    @Override
     public String display() {
         // Dispaly the page details
         System.out.println("This is the login page.");
+        System.out.println();
 
-        // ...
+        
 
         // Return the next page to navigate to
         return "DashboardPage";
