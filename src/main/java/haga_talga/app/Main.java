@@ -9,7 +9,6 @@ import haga_talga.page.AddCoursePage;
 import haga_talga.page.ShowCoursesPage;
 import haga_talga.page.EditCoursePage;
 import haga_talga.page.TakeAttendancePage;
-import haga_talga.page.EditAttendancePage;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -39,10 +38,10 @@ public class Main {
                     "DashboardPage", new DashboardPage(),
                     "AddCoursePage", new AddCoursePage(),
                     "ShowCoursesPage", new ShowCoursesPage(),
-                    "TakeAttendancePage", new TakeAttendancePage(),
-                    "EditAttendancePage", new EditAttendancePage()));
+                    "TakeAttendancePage", new TakeAttendancePage()));
 
-    public Main() {}
+    public Main() {
+    }
 
     /**
      * The main method that handles the program flow.
