@@ -1,0 +1,36 @@
+{
+  "Coursename": "Programming 2 (OOP)",
+  "courseCode": "CS205",
+  "Students": [
+    {
+      "name": "2432050",
+      "id": "Karim Mahmoud Ghazy",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    },
+    {
+      "name": "2431099",
+      "id": "Huda Amr El Sayed Ali",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    },
+    {
+      "name": "2431045",
+      "id": "Shorouk Atef Abdelhamid",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    },
+    {
+      "name": "2431025",
+      "id": "Basmala Mohamed Abdelmageed",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    },
+    {
+      "name": "2431035",
+      "id": "Rahma Atia Mohamed Atia",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    }
+  ]
+}

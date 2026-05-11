@@ -3,10 +3,30 @@
   "courseCode": "201",
   "Students": [
     {
-      "name": "عبدالرحمن رمضان مرسي زعزوع",
+      "name": "Abdelrahman ramadan za3zo3",
       "id": "2024005",
-      "attendedDays": 1,
-      "lastAttendedDate": "2026-05-08"
+      "attendedDays": 2,
+      "lastAttendedDate": "2026-05-11"
+    }
+  ],
+  "Coursename": "Programming 3",
+  "courseCode": "201",
+  "Students": [
+    {
+      "name": "Karim Mahmoud Ahmed",
+      "id": "2024005",
+      "attendedDays": 2,
+      "lastAttendedDate": "2026-05-11"
+    }
+  ],
+  "Coursename": "Programming 3",
+  "courseCode": "201",
+  "Students": [
+    {
+      "name": "Not Karim Mahmoud",
+      "id": "2024005",
+      "attendedDays": 2,
+      "lastAttendedDate": "2026-05-11"
     }
   ]
 }
