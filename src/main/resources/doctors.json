@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Basmala Mohammed",
+    "id": "1",
+    "password": "Basmala",
+    "courses": "[]"
+  },
+  {
+    "name": "Huda Amr",
+    "id": "2",
+    "password": "Huda",
+    "courses": "[]"
+  },
+  {
+    "name": "Karim Ghazy",
+    "id": "3",
+    "password": "Karim",
+    "courses": "[]"
+  },
+  {
+    "name": "Rahma Atia",
+    "id": "4",
+    "password": "Rahma",
+    "courses": "[]"
+  },
+  {
+    "name": "Shrouk Atef",
+    "id": "5",
+    "password": "Shrouk",
+    "courses": "[]"
+  },
+  {
+    "name": "Abdelrahman Zauzau",
+    "id": "6",
+    "password": "Abdelrahman",
+    "courses": "[]"
+  }
+]
