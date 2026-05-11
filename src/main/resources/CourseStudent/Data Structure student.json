@@ -1,7 +1,13 @@
 {
-  "Coursename": "Programming 2 (OOP)",
-  "courseCode": "CS205",
+  "Coursename": "Data Structure",
+  "courseCode": "CS204",
   "Students": [
+    {
+      "name": "2432041",
+      "id": "Abdelrahman Ramadan Zaazoua",
+      "attendedDays": 1,
+      "lastAttendedDate": "2026-05-11"
+    },
     {
       "name": "2432050",
       "id": "Karim Mahmoud Ghazy",
@@ -21,14 +27,14 @@
       "lastAttendedDate": "2026-05-11"
     },
     {
-      "name": "2431025",
-      "id": "Basmala Mohamed Abdelmageed",
+      "name": "2431035",
+      "id": "Rahma Atia Mohamed Atia",
       "attendedDays": 1,
       "lastAttendedDate": "2026-05-11"
     },
     {
-      "name": "2431035",
-      "id": "Rahma Atia Mohamed Atia",
+      "name": "2431025",
+      "id": "Basmala Mohamed Abdelmageed",
       "attendedDays": 1,
       "lastAttendedDate": "2026-05-11"
     }
