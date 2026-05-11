@@ -17,7 +17,7 @@ public final class AddCoursePage extends Page {
     @Override
     public void showHeader() {
         System.out.println("*********************************");
-        System.out.println("*  ADD NEW COURSE MENU      *");
+        System.out.println("*     ADD NEW COURSE MENU       *");
         System.out.println("*********************************");
     }
 
