@@ -73,6 +73,7 @@ public final class AddCoursePage extends Page {
             System.out.println();
         }
 
+        Main.scanner.nextLine(); // Clear the newline character from the input buffer
         return "DashboardPage";
     }
 }
