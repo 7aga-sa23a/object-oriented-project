@@ -14,6 +14,7 @@ import haga_talga.page.ShowCourseAttendancePage;
 import haga_talga.page.ShowCoursesPage;
 import haga_talga.page.SignupPage;
 import haga_talga.page.TakeAttendancePage;
+import haga_talga.page.GenerateQRPage;
 import haga_talga.util.Formatter;
 
 // Run the program using the following command: java Main.java
@@ -45,7 +46,8 @@ public class Main {
                     "ShowCoursesPage", new ShowCoursesPage(),
                     "TakeAttendancePage", new TakeAttendancePage(),
                     "ShowCourseAttendancePage", new ShowCourseAttendancePage(),
-                    "DeleteCoursePage", new DeleteCoursePage()));
+                    "DeleteCoursePage", new DeleteCoursePage(),
+                    "GenerateQRPage", new GenerateQRPage()));
 
     public Main() {
     }
