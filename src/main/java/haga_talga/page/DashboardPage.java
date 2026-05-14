@@ -12,7 +12,7 @@ public final class DashboardPage extends Page {
     @Override
     public String display() {
         // Display dashboard options
-        Formatter.box("Welcome to the dashboard!\nWhat do you wish to do today?\n-----------------------------\n1. Add a course\n2. Display my courses\n3. Take today's attendance\n4. View attendance for a course\n5. Delete a course\n6. Exit program", "cyan", "single", "center", 140);
+        Formatter.box("Welcome to the dashboard!\nWhat do you wish to do today?\n-----------------------------\n1. Add a course\n2. Display my courses\n3. Take today's attendance\n4. View attendance for a course\n5. Delete a course\n6. Generate Student QR Code\n7. Exit program", "cyan", "single", "center", 140);
         Formatter.prompt("Enter your choice: ", "blue");
 
         // Keep prompting the user to choose an option, until they make a valid choice
@@ -43,9 +43,12 @@ public final class DashboardPage extends Page {
             else if (option.startsWith("5") || option.contains("delete")) {
                 return "DeleteCoursePage";
             }
-    
+            // Option 6: Generate QR Code
+            else if (option.startsWith("6") || option.contains("generate") || option.contains("qr")) {
+                return "GenerateQRPage";
+            }
             // Option 7: Exit program
-            else if (option.startsWith("6") || option.contains("exit")) {
+            else if (option.startsWith("7") || option.contains("exit")) {
                 return "exit";
             }
             // Invalid option
